@@ -8,13 +8,13 @@
 
 using namespace std;
 
-MotorVehicle::MotorVehicle()
+MotorVehicle::MotorVehicle(engine motorIn, Body bodyIn, owner personIn, int numbersOfTiersIn, string modelIn)
 {
-	engine motor;
-	Body body;
-	owner person;
-	int numbersOfTiers;
-	std::string model;
+	engine motor=motorIn;
+	Body body=bodyIn;
+	owner person=personIn;
+	int numbersOfTiers=numbersOfTiersIn;
+	std::string model=modelIn;
 	float *tierDiameters = new float[numbersOfTiers];
 	for (int i = 0; i < numbersOfTiers; i++)
 	{

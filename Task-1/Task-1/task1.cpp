@@ -29,5 +29,7 @@ int main() {
 //asking for information
 	//owner
 	printf( "some question redarding the owner: \n name, addres, Abel yo drive(true/false): ");
+	scanf_s("%s, %s, %b", nameIn, addreIn, allowedToDrive);
+	owner personIn(nameIn, addreIn, allowedToDrive);
 	
 }
